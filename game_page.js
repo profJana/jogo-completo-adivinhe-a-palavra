@@ -14,23 +14,7 @@ document.getElementById("playerQuestion").innerHTML = "Turno de Pergunta - " + p
 document.getElementById("playerAnswer").innerHTML = "Turno de Resposta - " + player2Name;
 
 function send() {
-    getWord = document.getElementById("word").value;
-    word = getWord.toLowerCase();
-    console.log("palavra em caixa baixa = " + word);
-
-    //chatAt obtem uma letra de uma palavra
-    charAt1 = word.charAt(1);
-    console.log(charAt1);
-
-    //obter a letra do meio da palavra
-    dividirMeio = Math.floor(word.length / 2);
-    charAt2 = word.charAt(dividirMeio);
-    console.log(charAt2);
-
-    //obter a ultima letra da palavra
-    ultimaLetra = word.length - 1;
-    charAt3 = word.charAt(ultimaLetra);
-    console.log(charAt3);
+   
 
     removeCharAt1 = word.replace(charAt1, "_");
     removeCharAt2 = removeCharAt1.replace(charAt2, "_");
